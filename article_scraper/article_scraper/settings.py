@@ -9,6 +9,10 @@
 
 BOT_NAME = 'article_scraper'
 
+CLOSESPIDER_PAGECOUNT = 10 # Spider will close after crawling 10 pages
+FEED_URI = 'articles.csv' # Where the output of the spider should go
+FEED_FORMAT = 'csv' # The format it should be saved in
+
 SPIDER_MODULES = ['article_scraper.spiders']
 NEWSPIDER_MODULE = 'article_scraper.spiders'
 
